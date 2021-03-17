@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://use.typekit.net/cov6xbo.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>FusionCharts - Gallery Example - Scroll Column 2D Chart in JavaScript </title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script
+    type="text/javascript"
+    src="/js/lib/dummy.js"
+    
+  ></script>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+
+
+      <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+      <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+  <style id="compiled-css" type="text/css">
+      
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+
+</head>
+<body>
+  <div class = "main">  
+<div id="container">FusionCharts will render here</div>
+
+<div class ="text1">
+
+<p> Today there are more than 26 million refugees currently live in host communities. The Sankey diagram shows the flow of estimated number of refugees from top 10 countries where they are currently coming from and the list of countires hosting the most refugees (reaching the USA). The objective is to demonstrate this large complex and 
+unstable data in a simple interactive visualized representation.<br><br>
+
+Developing countries accept about 86 per cent of the world’s refugees. Below is a table with top countries that received the most refugees in relation to their population during the period 2010–2019. The first country Lebanon, with a population of about 7 million, is 
+currently hosting about 1.8 million refugees from Syria, which makes 25%. <br><br>
+
+Among developed countries Germany and Sweden have the most generous refugee policy in Europe and, unlike many other countries, have actively welcomed them. I believe that he USA should adjust human rights and immigration policies to contribute helping those who have fled their homes in search of safety for their families due to disasters, violence and tyrannical regimes and wars. 
+ <br>
+ <p>
+	Lebanon 25% <br>
+	Jordan   10.7 % <br>
+	Turkey 5.1 % <br>
+	Uganda   3.8% <br>
+	Sweden    2.7% <br>
+	Sudan    2.7%<br>
+	Colombia   1.7% <br>
+	Germany   1.5% <br>
+	Ethiopia   0.9% <br>
+	Kenya    0.8% <br>
+	Bangladesh 0.4%<br>
+	USA 0.08% <br>
+</p>
+</p>
+</div>
+</div>
+
+
+
+    <script type="text/javascript">//<![CDATA[
+
+
+FusionCharts.ready(function() {
+  var topStores = new FusionCharts({
+    type: "sankey",
+    renderAt: "container",
+    id: "sankey-chart",
+    width: "100%",
+    height: "700",
+    
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+     
+      	"targetNodeColor":"#ffffff",
+
+        "showBorder": "0",
+
+      	//"bgImageDisplayMode":"center",
+      	// "bgImageHAligh":"bottom",
+      	// "bgColor":"#59253A",
+      "bgColor": "#000000",
+
+      'bgAlpha':"100",
+     
+      "showLegend":"0",
+     // "legendItemFont":"Avenir",
+      // "legendItemFontSize":"10",
+ 
+      "linkAlpha": "70",
+
+      // "exportEnabled": "1",
+        // "nodeSpacing": "5",
+         //subcaption: "2020",
+       // legendPosition: "bottom",
+        //linkcolor: 'blend',
+     
+        "nodeAlpha": "100",
+        "nodeLabelPosition": "right",
+        "nodeLabelFont": "Avenir",
+        "nodeLabelFontColor": "#E9E5E4",
+        "nodeSpacing": "5",
+        "nodeRelaxation": "0",
+        "showNodeValues": "0",
+     	"nodeWidth": "15",
+     	"captionFont": "DDT",
+     	"subcaptionFont": "DDT",
+     	"subcaptionFontSize": "15",
+     	"captionFontBold": "1",
+     	"subcaptionFontColor": "#ffffff",
+     	"subcaptionFontBold": "1",
+     	"captionAlignment": "left",
+     	"captionFontSize": "24",
+     	"captionFontColor": "#E9E5E4f",
+     	"linkcolor":"blend",
+        caption: "The flow of top 10 countries of refugees origin and top their host countries.",
+       
+        theme: "candy"
+
+      },
+
+
+      nodes: [{
+          label: "Syria",
+        "color": "#3e5570", 
+          
+        },
+        {
+          label: "Turkey",
+          "color": "#46596e",
+       
+        },
+         {
+          label: "Jordan",
+          "color": "#5a6573",
+     
+           
+          
+        },
+         {
+          label: "Uganda",
+              "color": "#8a5f51",
+           
+        },
+         {
+          label: "Lebanon",
+          "color": "#616b75",
+            
+        },
+         {
+          label: "Colombia",
+            "color": "#915e6e",
+          
+        },
+         {
+          label: "Pakistan",
+           "color": "#707c8a",
+            
+        },
+         {
+          label: "Germany",
+          "color": "#2f572a",
+        },
+        
+         {
+          label: "Sudan",
+          "color": "#946f63",
+        },
+         {
+          label: "Iran",
+          "color": "#929ba6",
+        },
+        {
+          label: "Venezuela",
+           "color": "#895061",
+
+        },
+         {
+          label: "South Sudan",
+           "color": "#a34f33",
+         
+        },
+        {
+          label: "Afghanistan",
+          "color": "#5d7999", 
+         
+        },
+       
+         {
+          label: "Palestine",
+          "color": "#7b98ba",
+          
+        },
+        {
+          label: "Iraq",
+          "color": "#95b0cf", 
+        },
+        
+        {
+          label: "Myanmar",
+          "color": "#b6cbe3",
+        },
+        {
+          label: "Somalia",
+          "color": "#c46c4f",
+        },
+        {
+          label: "Congo",
+          "color": "#de8b6f",
+        },
+       
+         
+        {
+          label: "Eritrea",
+          "color": "#f0ab95",
+
+        },
+       {
+          label: "Bangladesh",
+           "color": "#c3d2e3",
+
+
+        },
+        
+         {
+          label: "Peru",
+          "color": "#9c6d7b",
+        },
+        {
+          label: "Ethiopia",
+          "color": "#a67565",
+        },
+         {
+          label: "Chile",
+          "color": "#b08290",
+        },
+         {
+          label: "Equador",
+          "color": "#c79daa",
+        },
+         {
+          label: "Kenya",
+          "color": "#a3857a",
+        },
+       
+        
+        {
+          label: "Brazil",
+          "color": "#e3bfca",
+      
+        },
+       
+        {
+          label: "Sweden",
+          "color": "#557052",
+      
+        },
+        
+         
+        {
+          label: "USA",
+          "color": "#de4635",
+      
+        }
+        
+      ],
+      links: [{
+ 
+          from: "Syria",
+          to: "Lebanon",
+          value: 1500000
+        },
+        {
+          from: "Syria",
+          to: "Jordan",
+          value: 1300000
+        },
+         {
+          from: "Syria",
+          to: "Turkey",
+          value: 3600000
+        },
+        {
+          from: "Syria",
+          to: "Germany",
+          value: 1200000
+        },
+        {
+          from: "Syria",
+          to: "Sweden",
+          value: 136000
+        },
+        {
+          from: "Afghanistan",
+          to: "Sweden",
+          value: 50000
+        },
+        {
+          from: "Iraq",
+          to: "Sweden",
+          value: 20000
+        },
+        {
+          from: "Venezuela",
+          to: "Colombia",
+          value: 1800000
+        },
+         {
+     	from: "Afghanistan",
+          to: "Iran",
+          value: 1000000
+         },
+         {
+     	from: "Afghanistan",
+          to: "Pakistan",
+          value: 1500000
+         },
+       
+        {
+          from: "South Sudan",
+          to: "Uganda",
+          value: 1700000
+        },
+         {
+          from: "South Sudan",
+          to: "Ethiopia",
+          value: 106000
+        },
+        {
+          from: "South Sudan",
+          to: "Sudan",
+          value: 1000000
+        },
+        {
+          from: "Myanmar",
+          to: "Bangladesh",
+          value: 900000
+        
+        },
+        {
+          from: "Iraq",
+          to: "Jordan",
+          value: 790000
+        },
+        
+        {
+          from: "Iraq",
+          to: "Lebanon",
+          value: 180000
+        },
+       
+        
+        {
+          from: "Somalia",
+          to: "Kenya",
+          value: 360000
+        },
+        {
+          from: "Somalia",
+          to: "Ethiopia",
+          value: 450000
+        },
+        
+        {
+          from: "Somalia",
+          to: "Sweden",
+          value: 64000
+        },
+        {
+          from: "Congo",
+          to: "Uganda",
+          value: 800000
+        },
+        {
+          from: "Palestine",
+          to: "Jordan",
+          value: 1200000
+        },
+        {
+          from: "Palestine",
+          to: "Lebanon",
+          value: 174000
+        },
+        {
+          from: "Venezuela",
+          to: "Peru",
+          value: 861000
+        },
+     {
+          from: "Venezuela",
+          to: "Chile",
+          value: 455000
+        },
+     
+       {
+          from: "Venezuela",
+          to: "Equador",
+          value: 367000
+        },
+         {
+          from: "Venezuela",
+          to: "Brazil",
+          value: 320000
+        },
+          {
+          from: "Eritrea",
+          to: "Ethiopia",
+          value: 164000
+        },
+         {
+          from: "Eritrea",
+          to: "Sudan",
+          value: 164000
+        },
+         {
+          from: "Afghanistan",
+          to: "USA",
+          value: 90000
+        },
+        
+        {
+          from: "Eritrea",
+          to: "Germany",
+          value: 55000
+        },
+          {
+          from: "Afghanistan",
+          to: "Germany",
+          value: 50000
+        },
+        {
+          from: "Palestine",
+          to: "USA",
+          value: 31000
+        },
+        {
+          from: "Somalia",
+          to: "USA",
+          value: 30000
+        },
+        {
+         //"alpha":"100",
+          from: "Venezuela",
+          to: "USA",
+          value: 29000
+        },
+         
+         {
+          from: "Eritrea",
+          to: "Sweden",
+          value: 28000
+        },
+        
+        {
+          from: "Iraq",
+          to: "USA",
+          value: 29000
+        },
+        
+        {
+          from: "South Sudan",
+          to: "USA",
+          value: 20000
+        },
+         {
+          from: "Syria",
+          to: "USA",
+          value: 18000
+        },
+         {
+          from: "Myanmar",
+          to: "USA",
+          value: 12000
+        },
+         {
+          from: "Congo",
+          to: "USA",
+          value: 10000
+        },
+
+        {
+          from: "Eritrea",
+          to: "USA",
+          value: 6000
+        },
+        
+       
+      ]
+    }
+  }).render();
+});
+
+
+
+  //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "kms1cua8"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>

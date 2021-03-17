@@ -12,6 +12,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+
+
+
   <script
     type="text/javascript"
     src="/js/lib/dummy.js"
@@ -36,8 +39,11 @@
 
 </head>
 <body>
+
+  
   <div class = "main">  
 <div id="container">FusionCharts will render here</div>
+<div id="chart-container">FusionCharts will render here</div
 
 <div class ="text1">
 
@@ -134,53 +140,53 @@ FusionCharts.ready(function() {
 
       nodes: [{
           label: "Syria",
-         
+        "color": "#3e5570", 
           
         },
         {
           label: "Turkey",
-          "color": "#867979",
+          "color": "#46596e",
        
         },
          {
           label: "Jordan",
-           "color": "#867979",
+          "color": "#5a6573",
      
            
           
         },
          {
           label: "Uganda",
-          "color": "#867979",
+              "color": "#8a5f51",
            
         },
          {
           label: "Lebanon",
-          "color": "#867979",
+          "color": "#616b75",
             
         },
          {
           label: "Colombia",
-           "color": "#867979",
+            "color": "#915e6e",
           
         },
          {
           label: "Pakistan",
-           "color": "#867979",
+           "color": "#707c8a",
             
         },
          {
           label: "Germany",
-          "color": "#867979",
+          "color": "#2f572a",
         },
         
          {
           label: "Sudan",
-          "color": "#867979",
+          "color": "#946f63",
         },
          {
           label: "Iran",
-          "color": "#867979",
+          "color": "#929ba6",
         },
         {
           label: "Venezuela",
@@ -189,90 +195,91 @@ FusionCharts.ready(function() {
         },
          {
           label: "South Sudan",
-           "color": "#7a876d",
+           "color": "#a34f33",
+         
         },
         {
           label: "Afghanistan",
-          "color": "#85361c",
+          "color": "#5d7999", 
+         
         },
        
          {
-          label: "Palestina",
-          "color": "#836553",
+          label: "Palestine",
+          "color": "#7b98ba",
           
         },
         {
           label: "Iraq",
-          "color": "#9f2839",
+          "color": "#95b0cf", 
         },
         
         {
           label: "Myanmar",
-          "color": "#ffd987",
+          "color": "#b6cbe3",
         },
         {
-          label: "Somali",
-          "color": "#59823a",
+          label: "Somalia",
+          "color": "#c46c4f",
         },
         {
           label: "Congo",
-          "color": "#404984",
+          "color": "#de8b6f",
         },
        
          
         {
           label: "Eritrea",
-          "color": "#d78f52",
+          "color": "#f0ab95",
 
         },
        {
           label: "Bangladesh",
-           "color": "#867979",
+           "color": "#c3d2e3",
 
 
         },
         
          {
           label: "Peru",
-          "color": "#867979",
+          "color": "#9c6d7b",
         },
         {
           label: "Ethiopia",
-          "color": "#867979",
+          "color": "#a67565",
         },
          {
           label: "Chile",
-          "color": "#867979",
+          "color": "#b08290",
         },
          {
           label: "Equador",
-          "color": "#867979",
+          "color": "#c79daa",
         },
          {
-          label: "Kenia",
-          "color": "#867979",
+          label: "Kenya",
+          "color": "#a3857a",
         },
        
         
         {
           label: "Brazil",
-          "color": "#867979",
+          "color": "#e3bfca",
       
         },
        
         {
           label: "Sweden",
-          "color": "#867979",
+          "color": "#557052",
       
         },
         
          
         {
           label: "USA",
-          "color": "#867979",
+          "color": "#de4635",
       
         }
-        
       ],
       links: [{
  
@@ -361,18 +368,18 @@ FusionCharts.ready(function() {
        
         
         {
-          from: "Somali",
-          to: "Kenia",
+          from: "Somalia",
+          to: "Kenya",
           value: 360000
         },
         {
-          from: "Somali",
+          from: "Somalia",
           to: "Ethiopia",
           value: 450000
         },
         
         {
-          from: "Somali",
+          from: "Somalia",
           to: "Sweden",
           value: 64000
         },
@@ -382,12 +389,12 @@ FusionCharts.ready(function() {
           value: 800000
         },
         {
-          from: "Palestina",
+          from: "Palestine",
           to: "Jordan",
           value: 1200000
         },
         {
-          from: "Palestina",
+          from: "Palestine",
           to: "Lebanon",
           value: 174000
         },
@@ -439,12 +446,12 @@ FusionCharts.ready(function() {
           value: 50000
         },
         {
-          from: "Palestina",
+          from: "Palestine",
           to: "USA",
           value: 31000
         },
         {
-          from: "Somali",
+          from: "Somalia",
           to: "USA",
           value: 30000
         },
@@ -500,7 +507,112 @@ FusionCharts.ready(function() {
   }).render();
 });
 
+FusionCharts.ready(function() {
+  var worldMap = new FusionCharts({
+    type: 'maps/worldwithcountries',
+    renderAt: 'chart-container',
+    width: '600',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
 
+      "chart": {
+      
+         // "showLabels":"1",
+
+//"entityFillColor": "#000000",
+"nullEntityColor":"#867979",
+"entityFillHoverColor": "#D6D6D6",
+"hoverOnNull":"1",
+
+
+"bgColor": "#000000",
+
+      'bgAlpha':"100",
+        "caption": "",
+        "theme": "fusion",
+        "formatNumberScale": "0",
+        //"numberSuffix": "M"
+      },
+      "colorrange": "0",
+
+      "data": [{
+        "id": "23",
+        //"value": "USA", USA
+      "color": "#de4635",
+       //"link": "P-detailsPopUp, width=400, height=300, toolbar=nom scrollbars=no,resizable=no-Detailed/TotalSales.hmtl"
+
+      }, {
+        "id": "199",
+        //"value": "SY",SYria
+        "color": "#3e5570", 
+      },
+      {
+        "id": "38",
+        //"value": "VE",VENE
+           "color": "#895061",
+      },
+      {
+        "id": "204",
+        //"value": "SS",SSudan
+             "color": "#a34f33",
+      },
+      {
+        "id": "240",
+        //"value": "WE",PAlestine
+            "color": "#7b98ba",
+      },
+
+ {
+        "id": "167",
+       // "value": "SE", Sweden
+           "color": "#557052",
+      },
+ {
+        "id": "116",
+       //"value": "PK", PAKISTAN
+          "color": "#707c8a",
+            "showLabels":"1",
+           // "useSNameInLabels":"1",
+      },
+       {
+        "id": "106",
+       // "value": "IA",IRAN
+          "color": "#929ba6",
+      },
+       {
+        "id": "96",
+       // "value": "BD",Bangladesh
+         "color": "#c3d2e3",
+      },
+       {
+        "id": "93",
+       // "value": "AF",AFG
+        "color": "#5d7999", 
+      },
+       {
+        "id": "142",
+       // "value": "DE",GERM
+        "color": "#2f572a",
+      },
+
+       {
+        "id": "173",
+       // "value": "TK"
+
+      }, {
+        "id": "191",
+        //"value": "IZ"
+      }, {
+        "id": "193",
+        //"value": "JO"
+      }, {
+        "id": "195",
+       // "value": "LB"
+      }]
+    }
+  }).render();
+});
 
   //]]></script>
 
