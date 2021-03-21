@@ -23,7 +23,7 @@ body{
   margin-right: 0px;
   margin-left: 0px;
   padding: 10px;
-  width:50%;
+  width:60%;
   /*background-color: #ffffff;*/
   text-align: left;
   float: left;
@@ -54,8 +54,8 @@ body{
 
 
   height:700px;
-  width:260px;
-  float: right;
+  width:160px;
+  float: left;
  
   /*text-align: right;*/
 }
